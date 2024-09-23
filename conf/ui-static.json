@@ -1,0 +1,37 @@
+{
+  "login": {
+    "onClick": {
+      "action": "APICall",
+      "apiConf": {
+        "path": "/login",
+        "method": "POST",
+        "payload": {
+          "___": "${this}"
+        }
+      }
+    }
+  },
+  "lock": [],
+  "search": {
+ 
+  },
+  "forgotPassword": {
+ 
+  },
+  "logout": {
+ 
+  },
+  "changePassword": {
+ 
+  },
+  "userProfile": {
+ 
+  },
+  "notifications": {
+ 
+  },
+  "patientNotes": {
+ 
+  }
+ 
+}

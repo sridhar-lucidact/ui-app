@@ -1,0 +1,17 @@
+.la-grid-theme {
+  --ag-border-color: var(--lucid-grey-300);
+  --ag-border-radius: 0;
+  --ag-header-column-separator-height: 100%;
+  --ag-header-background-color: var(--lucid-grey-100);
+  --ag-row-border-color: var(--lucid-grey-300);
+  --ag-header-foreground-color: var(--lucid-grey-700);
+}
+
+.la-grid-theme .ag-root-wrapper {
+  border: 0;
+  border-top: 1px solid var(--ag-border-color);
+}
+
+.la-grid-theme .ag-header-row, .la-grid-theme .ag-header {
+  font-weight: 500 !important;
+}

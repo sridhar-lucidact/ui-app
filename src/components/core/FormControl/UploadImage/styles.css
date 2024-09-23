@@ -1,0 +1,3 @@
+.upload__image-wrapper span[role='img'] {
+  pointer-events: none;
+}

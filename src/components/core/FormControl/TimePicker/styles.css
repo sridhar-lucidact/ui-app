@@ -1,0 +1,88 @@
+.core-time-picker-input [data-slot='input-wrapper'] [data-editable=true][data-placeholder=true] {
+    @apply text-lucid-grey-600
+}
+
+
+
+.core-time-picker-input [data-slot='input-wrapper'] [data-editable=true][data-placeholder=true] + [data-type="literal"] {
+    @apply text-lucid-grey-600
+}
+
+
+
+.core-time-picker-input.bordered [data-slot='input-wrapper'] [data-editable=true]:not([data-placeholder=true]) {
+    @apply text-lucid-blue-900
+}
+
+
+.core-time-picker-input.bordered [data-slot='input-wrapper'] [data-editable=true]:not([data-placeholder=true]) + [data-type="literal"] {
+    @apply text-lucid-blue-900
+}
+
+
+.core-time-picker-input.underlined [data-slot='input-wrapper'] [data-editable=true]:not([data-placeholder=true]) {
+    @apply text-lucid-grey-900
+}
+
+.core-time-picker-input.underlined [data-slot='input-wrapper'] [data-editable=true]:not([data-placeholder=true]) + [data-type="literal"] {
+    @apply text-lucid-grey-900
+}
+
+
+.core-time-picker-input.underlined [data-slot='input-wrapper']:focus-within {
+    @apply border-transparent 
+}
+
+
+.core-time-picker-input:has([data-editable=true][data-placeholder=true]) .core-time-picker-icon {
+    @apply text-lucid-grey-600
+}
+.core-time-picker-input.bordered:has([data-editable=true][data-placeholder=true]) .core-time-picker-icon {
+    @apply text-lucid-grey-600
+}
+
+.core-time-picker-input.bordered:has([data-editable=true]:not([data-placeholder=true])) .core-time-picker-icon {
+    @apply text-lucid-blue-900
+}
+
+
+.core-time-picker-input.underlined:has([data-editable=true]:not([data-placeholder=true])) .core-time-picker-icon {
+    @apply text-lucid-grey-900
+}
+
+/* .core-time-picker-list ::-webkit-scrollbar {
+    display: none;
+
+  } */
+/* .core-time-picker-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} */
+
+
+.timepicker-dropdown-menu {
+    @apply h-[13.125rem]
+}
+
+
+
+.timepicker-dropdown-menu  ul[data-slot='list']{
+    @apply overflow-y-auto p-1
+}
+
+
+.core-time-picker-input.bordered:has(button[data-slot='trigger'][aria-expanded=true]) [data-slot='input-wrapper']{
+    @apply shadow-active-input border-lucid-blue-500
+}
+
+
+
+.core-time-picker-input.underlined:not([data-invalid=true]):has(button[data-slot='trigger'][aria-expanded=true]) [data-slot='input-wrapper'] {
+    @apply border-lucid-blue-500
+}
+
+
+
+/* .core-time-picker-input.underlined:has(button[data-slot='trigger'][aria-expanded=true]) [data-slot='input-wrapper']{
+
+} */

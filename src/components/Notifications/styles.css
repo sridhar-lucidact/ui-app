@@ -1,0 +1,17 @@
+.user-avatar-menu {
+    @apply rounded-xl
+}
+
+
+.user-avatar-menu [data-slot='base']:not(li){
+    @apply p-0
+}
+
+
+.user-avatar-menu ul[data-slot='list'] > li:first-child{
+    @apply p-4 
+}
+
+.user-avatar-menu ul[data-slot='list'] > li:first-child:is([data-hover=true], [data-focus=true]){
+    @apply bg-transparent
+}

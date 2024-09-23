@@ -1,0 +1,33 @@
+.core-autocomplete.label-placement-outside-left [data-slot="base"] {
+  @apply gap-2;
+}
+
+.core-autocomplete.label-placement-outside-left [data-slot="label"] {
+  @apply !w-[30%] min-w-40 top-[1px];
+}
+
+.core-autocomplete [data-slot="main-wrapper"] {
+  @apply w-full;
+}
+
+.core-autocomplete.label-placement-outside-left [data-slot="main-wrapper"] {
+  @apply w-[70%] max-w-[21.25rem];
+}
+
+.core-autocomplete [data-slot="input-wrapper"] {
+  @apply !min-h-9 !border-b !px-0;
+}
+
+.core-autocomplete [data-slot="input-wrapper"]::after {
+  bottom: -1px;
+  height: 1px;
+  @apply !bg-lucid-blue-500;
+}
+
+.core-autocomplete [data-slot="input-wrapper"] button {
+  @apply !h-5 !w-5 !min-w-5;
+}
+
+.core-autocomplete [data-slot="input-wrapper"] input + div {
+  @apply mr-2;
+}

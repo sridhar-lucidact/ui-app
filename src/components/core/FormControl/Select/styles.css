@@ -1,0 +1,66 @@
+.core-select-input-wrapper:not([data-invalid=true])[data-hover=true]::after{
+    @apply bg-lucid-grey-500;
+}
+
+
+.core-select-input-wrapper:not([data-has-value=true]) span[data-slot='value']{
+  @apply !text-lucid-grey-600;
+}
+
+.core-select-input-wrapper[data-has-value=true][data-invalid=true] span[data-slot='value']{
+  @apply !text-lucid-grey-900;
+}
+
+
+.core-select-input-wrapper:not([data-invalid=true]).underlined [data-slot='trigger']::after {
+  @apply bg-lucid-blue-500;
+}
+.core-select-input-wrapper.bordered [data-slot='trigger']:is([data-focus=true], [data-open=true]) {
+  @apply border-lucid-blue-500;
+}
+
+
+.core-select-input-wrapper.underlined:not([data-invalid=true]) [data-slot='trigger']:not([data-focus=true], [data-open=true])[data-hover=true], .core-select-input-wrapper.underlined:not([data-invalid=true]) [data-slot='trigger']:not([data-focus=true], [data-open=true]):hover {
+  @apply border-lucid-grey-500;
+}
+
+
+.core-select-input-wrapper.underlined[data-invalid=true] [data-slot='trigger']:not([data-focus=true], [data-open=true])[data-hover=true], .core-select-input-wrapper.underlined:not([data-invalid=true]) [data-slot='trigger']:not([data-focus=true], [data-open=true]):hover {
+  @apply border-lucid-grey-500;
+}
+.core-select-input-wrapper.underlined[data-invalid=true] [data-slot='trigger']::after {
+  @apply bg-lucid-red-400;
+}
+
+.select-menu-popup ul[role='listbox'] {
+  @apply gap-1;
+}
+
+.select-menu-popup li[role='option'] {
+  @apply text-lucid-grey-900 py-[0.5625rem] rounded;
+}
+
+
+.select-menu-popup li[role='option'] span[data-label=true] {
+  @apply  text-xs leading-[1.166667] font-medium;
+}
+
+
+.select-menu-popup li[role='option']:is([data-hover=true], [data-selected=true],:focus) {
+  @apply bg-lucid-grey-100 text-lucid-grey-900;
+}
+
+.dark-theme.core-select-input-wrapper:not([data-has-value=true]) span[data-slot='value'] {
+  @apply !text-lucid-grey-500;
+}
+
+.dark-theme.select-menu-popup {
+  @apply bg-lucid-grey-800 border-lucid-grey-800;
+}
+.dark-theme.select-menu-popup li {
+  @apply !text-lucid-grey-100;
+}
+.dark-theme.select-menu-popup li[data-hover=true],
+.dark-theme.select-menu-popup li[role='option']:is([data-hover=true],[data-selected=true],:focus) {
+  @apply bg-lucid-grey-700;
+}
